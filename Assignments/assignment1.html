@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Week Assignment - Form</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(37, 37, 37);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            background-color: yellow;
+            border-radius: 20px;
+            padding:2% 5%;
+            margin-top: 20px;
+            width: 500px;
+            color: rgb(37, 37, 37);
+        }
+        h1{
+            color: yellow;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+        label,p{
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: rgb(37, 37, 37);
+        }
+        input,select{
+            padding: 5px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        input[type="submit"]{
+            width: 100px;
+            padding: 5px;;
+            margin-left: 200px;
+            margin-top: 30px;
+            background-color: rgb(37, 37, 37);
+            color: yellow;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover{
+            background-color: yellow;
+            color: rgb(37, 37, 37);
+            border: 2px solid rgb(37, 37, 37);
+        }
+        .button{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+        .bp{
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Input: </h1>
+    <form action="assignment1.html">
+
+        <label for="name">Name: </label>
+        <input name="name" type="text" placeholder="Enter the name: "/>
+
+        <label for="dob">Date of Birth: </label>
+        <input name="dob" type="date"/>
+
+        <p>Enter the Gender: </p>
+        <p class="bp"><input name="male" type="radio" value="male"/>
+        <label for="male" class="button">Male</label></p>
+        <p class="bp"><input name="female" type="radio" value="female"/>
+        <label for="female" class="button">Female</label></p>
+
+        <label for="clg">Choose college:</label>
+        <select name="clg" >
+            <option value="vitv">Vellore Institute of Technology, Vellore</option>
+            <option value="vitc">Vellore Institute of Technology, Chennai</option>
+            <option value="vita">Vellore Institute of Technology, Amaravati</option>
+            <option value="vitb">Vellore Institute of Technology, Bhopal</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address" >Address:  </label>
+        <textarea name="address" cols="30" rows="10"></textarea>
+
+        <p >Languages Known: </p>
+        <p class="bp"><input type="checkbox" name="python">
+        <label for="pyhton" class="button">Python</label></p>
+        <p class="bp"><input type="checkbox" name="c++">
+        <label for="c++" class="button">C++</label></p>
+        <p class="bp"><input type="checkbox" name="java">
+        <label for="java" class="button">Java</label></p>
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
